@@ -1,0 +1,284 @@
+{
+  "tests": [
+    {
+      "name": "Check class memeber (1 Point)",
+      "setup": "",
+      "run": "gradle test --tests at.ac.fhcampuswien.AppTest.classBankAccount1",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Check class modifier (1 Point)",
+      "setup": "",
+      "run": "gradle test --tests at.ac.fhcampuswien.AppTest.classBankAccount2",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Check class constructors (1 Point)",
+      "setup": "",
+      "run": "gradle test --tests at.ac.fhcampuswien.AppTest.classBankAccount3",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Check deposit (1 Point)",
+      "setup": "",
+      "run": "gradle test --tests at.ac.fhcampuswien.AppTest.deposit",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Check withdraw (1 Point)",
+      "setup": "",
+      "run": "gradle test --tests at.ac.fhcampuswien.AppTest.withdraw",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Check getBalance (1 Point)",
+      "setup": "",
+      "run": "gradle test --tests at.ac.fhcampuswien.AppTest.getBalance",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Check calculateFees (1 Point)",
+      "setup": "",
+      "run": "gradle test --tests at.ac.fhcampuswien.AppTest.calculateFees",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Check toString (1 Point)",
+      "setup": "",
+      "run": "gradle test --tests at.ac.fhcampuswien.AppTest.bankAccountToString",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Check class SavingsAccount (1 Point)",
+      "setup": "",
+      "run": "gradle test --tests at.ac.fhcampuswien.AppTest.classSavingsAccount*",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Check calculateFeesSavingsAccount (1 Point)",
+      "setup": "",
+      "run": "gradle test --tests at.ac.fhcampuswien.AppTest.calculateFeesSavingsAccount",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Check calculateInterest (1 Point)",
+      "setup": "",
+      "run": "gradle test --tests at.ac.fhcampuswien.AppTest.calculateInterest",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Check interestRateGetterSetter (1 Point)",
+      "setup": "",
+      "run": "gradle test --tests at.ac.fhcampuswien.AppTest.interestRateGetterSetter",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Check class member (1 Point)",
+      "setup": "",
+      "run": "gradle test --tests at.ac.fhcampuswien.AppTest.classCheckingAccount1",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Check constructors (1 Point)",
+      "setup": "",
+      "run": "gradle test --tests at.ac.fhcampuswien.AppTest.classCheckingAccount2",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Check deposit CheckingAccount (1 Point)",
+      "setup": "",
+      "run": "gradle test --tests at.ac.fhcampuswien.AppTest.depositCheckingAccount",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Check withdraw CheckingAccount (1 Point)",
+      "setup": "",
+      "run": "gradle test --tests at.ac.fhcampuswien.AppTest.withdrawCheckingAccount",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Check calculateFees CheckingAccount (1 Point)",
+      "setup": "",
+      "run": "gradle test --tests at.ac.fhcampuswien.AppTest.calculateFeesCheckingAccount",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Check Interface (1 Point)",
+      "setup": "",
+      "run": "gradle test --tests at.ac.fhcampuswien.AppTest.transferTransferBehaviour",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Check class RegularTransfer (1 Point)",
+      "setup": "",
+      "run": "gradle test --tests at.ac.fhcampuswien.AppTest.transferRegularTransfer*",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Check class TransferNotSupported (1 Point)",
+      "setup": "",
+      "run": "gradle test --tests at.ac.fhcampuswien.AppTest.transferTransferNotSupported",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Check performTransfer (1 Point)",
+      "setup": "",
+      "run": "gradle test --tests at.ac.fhcampuswien.AppTest.performTransfer",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Check member transferBehaviour (1 Point)",
+      "setup": "",
+      "run": "gradle test --tests at.ac.fhcampuswien.AppTest.checkTransferBehaviour",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Check compareTo (2 Points)",
+      "setup": "",
+      "run": "gradle test --tests at.ac.fhcampuswien.AppTest.compareTo",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 2
+    },
+    {
+      "name": "Check class Georgina (1 Point)",
+      "setup": "",
+      "run": "gradle test --tests at.ac.fhcampuswien.AppTest.classGeorgina",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Check addAccount (1 Point)",
+      "setup": "",
+      "run": "gradle test --tests at.ac.fhcampuswien.AppTest.addAccount",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Check printAccounts Ascending Order (1 Point)",
+      "setup": "",
+      "run": "gradle test --tests at.ac.fhcampuswien.AppTest.printAccounts1",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Check printAccounts descending order (1 Point)",
+      "setup": "",
+      "run": "gradle test --tests at.ac.fhcampuswien.AppTest.printAccounts2",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Check simulateFinanicalProspects (2 Points)",
+      "setup": "",
+      "run": "gradle test --tests at.ac.fhcampuswien.AppTest.simulateFinancialProspect*",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 2
+    }
+  ]
+}
