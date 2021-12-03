@@ -663,20 +663,21 @@ class AppTest {
         try {
             // check method exists
             Method simulateFinancialProspect = Georgina.class.getMethod("simulateFinancialProspect", BankAccount.class, int.class);
-            Method deposit = SavingsAccount.class.getMethod("deposit", double.class);
+            Method getBalance = BankAccount.class.getMethod("getBalance");
 
             // create objects
             Constructor<?> co1 = SavingsAccount.class.getConstructor(double.class);
             Constructor<?> co2 = Georgina.class.getConstructor();
             SavingsAccount p1 = (SavingsAccount) co1.newInstance(5.0);
             Georgina g = (Georgina) co2.newInstance();
-
+            double balance = (double) getBalance.invoke(p1);
             simulateFinancialProspect.invoke(g,p1,4);
 
             // expected
             String expected = "Your balance after 4 years is expected to be 0.0" + System.lineSeparator();
 
             // assertions
+            assertEquals((double) getBalance.invoke(p1), balance, "Balance may not be changed permanently during the simulation. The use of setBalance is not allowed.");
             assertEquals(expected, bos.toString().replaceAll(",","."));
 
         } catch (Exception e) {
