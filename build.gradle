@@ -1,5 +1,7 @@
 plugins {
     id 'application'
+    id 'java'
+    id 'jvm-test-suite'
 }
 
 group 'at.ac.fhcampuswien'
@@ -9,9 +11,16 @@ repositories {
     mavenCentral()
 }
 
-dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+testing {
+    //noinspection GroovyAssignabilityCheck
+    suites {
+        configureEach {
+            useJUnitJupiter()
+            dependencies {
+                implementation('org.junit.jupiter:junit-jupiter-api:5.9.0')
+            }
+        }
+    }
 }
 
 test {
@@ -23,18 +32,22 @@ run {
     standardInput(System.in)
 }
 
-mainClassName = 'at.ac.fhcampuswien.Georgina'
+application {
+    mainClass  = 'at.ac.fhcampuswien.Georgina'
+}
 
 allprojects {
-    tasks.withType(JavaCompile) {
-        sourceCompatibility = '1.8'
-        targetCompatibility = '1.8'
+    tasks.withType(JavaCompile).tap {
+        configureEach {
+            sourceCompatibility = '1.8'
+            targetCompatibility = '1.8'
+        }
     }
 }
 
-tasks.withType(JavaCompile) {
+tasks.withType(JavaCompile).configureEach {
     options.encoding = "UTF-8"
 }
-tasks.withType(Test) {
+tasks.withType(Test).configureEach {
     systemProperty "file.encoding", "UTF-8"
 }
